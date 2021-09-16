@@ -191,12 +191,10 @@ public class CommandRegistrar {
                 .name("performer")
                 .description("FastAsyncVoxelSniper performer.")
                 .permission("voxelsniper.sniper")
-                .alias("p")
                 .alias("perf")
-                .usage("/p")
-                .usage("Example: /p -- Sets the performer of the current brush to \"m\".")
-                .usage("/p <performer>")
-                .usage("Example: /p <performer> -- Sets the performer of the current brush to given performer.")
+                .usage("Example: /perf -- Sets the performer of the current brush to \"m\".")
+                .usage("/perf <performer>")
+                .usage("Example: /perf <performer> -- Sets the performer of the current brush to given performer.")
                 .sender(Player.class)
                 .build();
         PerformerExecutor executor = new PerformerExecutor(this.plugin);
