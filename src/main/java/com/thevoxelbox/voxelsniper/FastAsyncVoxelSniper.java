@@ -19,9 +19,9 @@ public class FastAsyncVoxelSniper {
     }
 
     public void initFavs() {
-        setupCommand("/p", (sender, command, label, args) -> {
+        setupCommand("/perf", (sender, command, label, args) -> {
             if (sender instanceof Player && sender.hasPermission("voxelsniper.sniper")) {
-                @Nullable PluginCommand cmd = plugin.getCommand("p");
+                @Nullable PluginCommand cmd = plugin.getCommand("perf");
                 plugin.onCommand(sender, cmd, label, args);
             }
             return false;
