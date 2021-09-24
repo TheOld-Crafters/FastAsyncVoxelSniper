@@ -29,13 +29,14 @@ dependencies {
 	compileOnly(libs.annotations)
 
     // Plugins
-	compileOnlyApi(libs.faweBukkit)
+	compileOnly(libs.bundles.fawe)
 
     // Third party
 	implementation(libs.serverlib)
 	implementation(libs.bstatsBase)
 	implementation(libs.bstatsBukkit)
     implementation(libs.paperlib)
+    implementation(libs.paster)
 }
 
 tasks.compileJava.configure {
@@ -106,6 +107,7 @@ tasks {
         relocate("org.incendo.serverlib", "com.thevoxelbox.voxelsniper.serverlib")
         relocate("org.bstats", "com.thevoxelbox.voxelsniper.metrics")
         relocate("io.papermc.lib", "com.thevoxelbox.voxelsniper.paperlib")
+        relocate("com.intellectualsites.paster", "com.thevoxelbox.voxelsniper.paster")
         minimize()
     }
 
