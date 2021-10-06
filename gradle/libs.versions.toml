@@ -6,16 +6,16 @@ paper = "1.17.1-R0.1-SNAPSHOT"
 annotations = "22.0.0"
 
 # Plugins
-fawe = "1.17-331"
+fawe = "1.17-341"
 
 # Third party
-serverlib = "2.3.0"
+serverlib = "2.3.1"
 bstats = "2.2.1"
 paperlib = "1.0.6"
 paster = "1.1.1"
 
 # Gradle plugins
-shadow = "7.0.0"
+shadow = "7.1.0"
 grgit = "4.1.0"
 pluginyml = "0.5.0"
 editorconfig = "0.0.3"

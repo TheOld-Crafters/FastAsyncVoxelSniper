@@ -51,7 +51,7 @@ configurations.all {
 }
 
 group = "com.fastasyncvoxelsniper"
-version = "2.2.3-SNAPSHOT"
+version = "2.2.5-SNAPSHOT"
 
 bukkit {
 	name = "FastAsyncVoxelSniper"
@@ -90,10 +90,6 @@ tasks {
         opt.links("https://papermc.io/javadocs/paper/1.17/")
         opt.links("https://ci.athion.net/job/FastAsyncWorldEdit-1.17-Core-Javadocs/javadoc/")
         opt.links("https://javadoc.io/doc/org.jetbrains/annotations/22.0.0/")
-    }
-
-    jar {
-        this.archiveClassifier.set("jar")
     }
 
     shadowJar {
