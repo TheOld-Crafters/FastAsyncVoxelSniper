@@ -1,6 +1,7 @@
 [versions]
 # Platform expectations
 paper = "1.17.1-R0.1-SNAPSHOT"
+log4j = "2.14.1"
 
 # Annotations
 annotations = "22.0.0"
@@ -18,12 +19,12 @@ paster = "1.1.1"
 shadow = "7.1.0"
 grgit = "4.1.0"
 pluginyml = "0.5.0"
-editorconfig = "0.0.3"
 nexus = "1.1.0"
 
 [libraries]
 # Platform expectations
 paper = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" }
+log4j = { group = "org.apache.logging.log4j", name = "log4j-api", version.ref = "log4j" }
 
 # Annotations
 annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
@@ -47,4 +48,3 @@ shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
 grgit = { id = "org.ajoberstar.grgit", version.ref = "grgit" }
 pluginyml = { id = "net.minecrell.plugin-yml.bukkit", version.ref = "pluginyml" }
 nexus = { id = "io.github.gradle-nexus.publish-plugin", version.ref = "nexus" }
-editorconfig = { id = "org.ec4j.editorconfig", version.ref = "editorconfig" }
